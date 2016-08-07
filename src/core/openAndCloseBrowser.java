@@ -26,6 +26,10 @@ public class openAndCloseBrowser {
 	@BeforeClass
 	public void OpenBrowser(String browser,String testURL,String Grid,String version) throws Exception
 	{
+		
+		
+		
+		
 		if(Grid.equalsIgnoreCase("true"))
 
 		{
