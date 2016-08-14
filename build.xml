@@ -1,5 +1,9 @@
 <project name="FrameWorkDataDriven" default="run" basedir=".">
 
+	 <presetdef name="javac">
+	    <javac includeantruntime="false" />
+	  </presetdef>
+	
     <property name="classes.dir" value="bin" />
     <property name="src.dir" value="src" />
     <property name="report.dir" value="test-output" />

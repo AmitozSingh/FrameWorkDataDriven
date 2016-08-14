@@ -1,43 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="1" failed="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="17873" started-at="2016-08-08T17:38:52Z" finished-at="2016-08-08T17:39:10Z">
+  <suite name="Suite" duration-ms="31" started-at="2016-08-14T11:44:45Z" finished-at="2016-08-14T11:44:45Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="17873" started-at="2016-08-08T17:38:52Z" finished-at="2016-08-08T17:39:10Z">
+    <test name="Test" duration-ms="31" started-at="2016-08-14T11:44:45Z" finished-at="2016-08-14T11:44:45Z">
       <class name="TestWg.test">
-        <test-method status="PASS" signature="OpenBrowser(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestWg.test@273305]" name="OpenBrowser" is-config="true" duration-ms="7769" started-at="2016-08-08T23:08:52Z" finished-at="2016-08-08T23:09:00Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[https://www.google.co.in/]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[false]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[47.0.1]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- OpenBrowser -->
-        <test-method status="PASS" signature="clickButtonFeelingLucky()[pri:0, instance:TestWg.test@273305]" name="clickButtonFeelingLucky" duration-ms="7828" started-at="2016-08-08T23:09:00Z" finished-at="2016-08-08T23:09:08Z">
+        <test-method status="SKIP" signature="clickButtonFeelingLucky()[pri:0, instance:TestWg.test@11d2887]" name="clickButtonFeelingLucky" duration-ms="16" started-at="2016-08-14T17:14:45Z" finished-at="2016-08-14T17:14:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickButtonFeelingLucky -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:TestWg.test@273305]" name="teardown" is-config="true" duration-ms="2271" started-at="2016-08-08T23:09:08Z" finished-at="2016-08-08T23:09:10Z">
+        <test-method status="FAIL" signature="OpenBrowser(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestWg.test@11d2887]" name="OpenBrowser" is-config="true" duration-ms="0" started-at="2016-08-14T17:14:45Z" finished-at="2016-08-14T17:14:45Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browser' is required by @Configuration on method OpenBrowser but has not been marked @Optional or defined
+in C:\Users\SUNNY\workspace\FrameWorkDataDriven\testng.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browser' is required by @Configuration on method OpenBrowser but has not been marked @Optional or defined
+in C:\Users\SUNNY\workspace\FrameWorkDataDriven\testng.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:148)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:84)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:197)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:170)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:104)
+	at org.testng.TestRunner.privateRun(TestRunner.java:773)
+	at org.testng.TestRunner.run(TestRunner.java:623)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
+	at org.testng.TestNG.run(TestNG.java:1018)
+	at org.testng.TestNG.privateMain(TestNG.java:1325)
+	at org.testng.TestNG.main(TestNG.java:1294)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenBrowser -->
+        <test-method status="SKIP" signature="teardown()[pri:0, instance:TestWg.test@11d2887]" name="teardown" is-config="true" duration-ms="0" started-at="2016-08-14T17:14:45Z" finished-at="2016-08-14T17:14:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
